@@ -8,10 +8,12 @@ const todos: Todo[] = [
   {
     title: "Walk dog",
     description: "Before 9am",
+    id: 1,
   },
   {
     title: "Clean bathroom",
     description: "",
+    id: 2,
   },
 ];
 
@@ -21,7 +23,7 @@ const schema = loadSchemaSync("**/*.graphql", {
 
 const resolvers = {
   Query: {
-    todos: () => todos,
+    todos: (): Todo[] => todos,
   },
 };
 

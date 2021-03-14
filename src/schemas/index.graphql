@@ -1,6 +1,7 @@
 type Todo {
-  title: String
-  description: String
+  title: String!
+  description: String!
+  id: Int!
 }
 
 type Query {
